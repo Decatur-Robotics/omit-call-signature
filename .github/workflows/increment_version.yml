@@ -23,7 +23,7 @@ jobs:
 
       - name: Get branch name
         id: branch
-        run: echo ::set-output name=branch::$(echo $GITHUB_REF | cut -d'/' -f3)
+        run: echo "branch=$(git branch --show-current)" >> $GITHUB_OUTPUT
 
       - name: Push changes
         run: git push origin ${{ steps.branch.outputs.branch }}
