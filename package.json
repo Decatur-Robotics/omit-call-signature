@@ -1,12 +1,12 @@
 {
-  "name": "npm-package-template",
+  "name": "omit-call-signature",
   "version": "1.0.0",
   "description": "",
   "author": "Decatur Robotics",
-  "license": "CC0 1.0",
+  "license": "CC BY-SA 4.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Decatur-Robotics/npm-package-template.git"
+    "url": "git+https://github.com/Decatur-Robotics/omit-call-signature"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
