@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.head_ref }}
+          ref: ${{ github.head_ref }} # We need to checkout the head branch, not the temporary merge branch
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.1.0
