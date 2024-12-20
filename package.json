@@ -8,7 +8,5 @@
     "type": "git",
     "url": "git+https://github.com/Decatur-Robotics/omit-call-signature.git"
   },
-  "files": [
-    "src/**/*"
-  ]
+  "main": "src/index.ts"
 }
