@@ -1,9 +1,7 @@
-# NPM Package Template
+# Omit Call Signature
 
-To get started, use this repo as a template and do the following:
+Provide a `OmitCallSignature<T>` type that strips the call signature from a type.
 
-- Update the details in package.json
-- Update the assignees in .github/dependabot.yml
-- Add your NPM_TOKEN to the repository secrets
+Packages [this StackOverflow answer](https://stackoverflow.com/a/62502740/22099600).
 
-NPM Package Template © 2024 by Decatur Robotics is licensed under CC BY 4.0
+OmitCallSignature © 2024 by Decatur Robotics is licensed under CC BY-SA 4.0
