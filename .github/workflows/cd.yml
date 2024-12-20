@@ -20,15 +20,10 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.1.0
 
-      - name: Create .npmrc
-        run: |
-          echo "registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
-
-      - name: Log in to NPM
-        run: npm login
-
       - name: Install dependencies
         run: npm install
 
       - name: Publish package
         run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
