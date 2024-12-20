@@ -19,6 +19,12 @@ jobs:
       - name: Stage changes
         run: git add package.json
 
+      - name: Set name
+        run: git config user.name "Gearbox Bot"
+
+      - name: Set email
+        run: git config user.email "gearbox@decaturrobotics.org"
+
       - name: Commit changes
         run: git commit -m "Increment patch to ${{ steps.increment.outputs.* }}"
 
