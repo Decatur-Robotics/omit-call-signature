@@ -3,7 +3,7 @@ name: Increment Version
 on: [workflow_call, workflow_dispatch, pull_request]
 
 jobs:
-  validate-ts:
+  increment:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -13,14 +13,14 @@ jobs:
         uses: actions/setup-node@v4.1.0
 
       - name: Increment patch number
-        run: npm version patch >> $VERSION
+        run: npm version patch >> $GITHUB_OUTPUTS
         id: increment
 
       - name: Stage changes
         run: git add package.json
 
       - name: Commit changes
-        run: git commit -m "Increment patch to ${{ steps.increment.outputs.VERSION }}"
+        run: git commit -m "Increment patch to ${{ steps.increment.outputs.* }}"
 
       - name: Push changes
         run: git push
