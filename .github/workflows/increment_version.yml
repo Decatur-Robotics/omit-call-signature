@@ -30,3 +30,6 @@ jobs:
 
       - name: Push changes
         run: git push
+
+      - name: Re-run CI
+        uses: ./.github/workflows/ci.yml
