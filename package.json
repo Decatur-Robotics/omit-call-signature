@@ -7,8 +7,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Decatur-Robotics/omit-call-signature"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   }
 }
