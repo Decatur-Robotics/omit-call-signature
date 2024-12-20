@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    tags-ignore:
+      - "*" # Ignore tags so incrementing version doesn't trigger this workflow
   workflow_call:
   workflow_dispatch:
 
@@ -11,9 +13,13 @@ jobs:
   ci:
     uses: ./.github/workflows/ci.yml
 
+  increment_version:
+    uses: ./.github/workflows/increment_version.yml
+
   cd:
     needs:
       - ci
+      - increment_version
     uses: ./.github/workflows/cd.yml
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
