@@ -21,5 +21,9 @@ jobs:
       - name: Increment patch number
         run: npm version patch
 
+      - name: Get branch name
+        id: branch
+        run: echo ::set-output name=branch::$(echo $GITHUB_REF | cut -d'/' -f3)
+
       - name: Push changes
-        run: git push
+        run: git push origin ${{ steps.branch.outputs.branch }}
