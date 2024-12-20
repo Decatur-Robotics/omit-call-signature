@@ -1,6 +1,11 @@
 name: Increment Version
 
-on: [workflow_call, workflow_dispatch, merge_group]
+on:
+  workflow_call:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
 
 jobs:
   increment:
