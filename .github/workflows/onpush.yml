@@ -15,3 +15,5 @@ jobs:
     needs:
       - ci
     uses: ./.github/workflows/cd.yml
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
