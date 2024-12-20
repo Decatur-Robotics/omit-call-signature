@@ -1,0 +1,14 @@
+{
+  "name": "npm-package-template",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Decatur Robotics",
+  "license": "CC0 1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Decatur-Robotics/npm-package-template.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}
