@@ -12,21 +12,14 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.1.0
 
-      - name: Increment patch number
-        run: npm version patch >> "$GITHUB_OUTPUT"
-        id: increment
-
-      - name: Stage changes
-        run: git add package.json
-
       - name: Set name
         run: git config user.name "Gearbox Bot"
 
       - name: Set email
         run: git config user.email "gearbox@decaturrobotics.org"
 
-      - name: Commit changes
-        run: git commit -m "Increment patch to ${{ steps.increment.outputs.* }}"
+      - name: Increment patch number
+        run: npm version patch
 
       - name: Push changes
         run: git push
