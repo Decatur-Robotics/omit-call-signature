@@ -3,9 +3,8 @@ name: Increment Version
 on:
   workflow_call:
   workflow_dispatch:
-  pull_request_target:
-    # branches: [main]
-    types: [opened, synchronize]
+  pull_request:
+    branches: [main]
 
 jobs:
   increment:
@@ -13,6 +12,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: $GITHUB_HEAD_REF
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.1.0
