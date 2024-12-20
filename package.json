@@ -6,6 +6,6 @@
   "license": "CC BY-SA 4.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Decatur-Robotics/omit-call-signature"
+    "url": "git+https://github.com/Decatur-Robotics/omit-call-signature.git"
   }
 }
