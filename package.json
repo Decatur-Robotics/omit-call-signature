@@ -1,6 +1,6 @@
 {
   "name": "omit-call-signature",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "",
   "author": "Decatur Robotics",
   "license": "MIT",
@@ -8,5 +8,11 @@
     "type": "git",
     "url": "git+https://github.com/Decatur-Robotics/omit-call-signature.git"
   },
-  "main": "src/index.ts"
+  "main": "src/index.ts",
+  "keywords": [
+    "typescript",
+    "omit",
+    "call",
+    "signature"
+  ]
 }
