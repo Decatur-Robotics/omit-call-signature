@@ -1,9 +1,9 @@
 {
   "name": "omit-call-signature",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "",
   "author": "Decatur Robotics",
-  "license": "CC BY-SA 4.0",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Decatur-Robotics/omit-call-signature.git"
